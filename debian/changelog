@@ -1,3 +1,29 @@
+gmp (2:6.2.1+dfsg1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload by the Reproducible Builds team.
+  * debian/rules changes by Vagrant Cascadian:
+    - pass ASMFLAGS with debug-prefix-map to configure.
+    - replace embedded build path in gmp.h with a placeholder string.
+    Closes: #1009931
+
+ -- Holger Levsen <holger@debian.org>  Thu, 22 Sep 2022 20:43:57 +0200
+
+gmp (2:6.2.1+dfsg1-1) unstable; urgency=medium
+
+  [ Bastian Germann ]
+  * [6c4ffc2] Remove field Priority on binary packages
+              libgmp10, libgmpxx4ldbl that duplicates source.
+  * [8bbe5e5] d/copyright: Convert to machine-readable format
+  * [08c667c] d/rules: Move to debhelper shared option -a
+  * [d4b328d] d/watch: Add repacksuffix
+  * [8d2e18e] Repack the source via Files-Excluded
+
+  [ Anton Gladky ]
+  * [9ff6e5c] Repack upstream version 6.2.1+dfsg1, excluding doc/
+  * [ca5c701] Minor fixes in d/control, d/copyright
+
+ -- Anton Gladky <gladk@debian.org>  Sun, 12 Jun 2022 22:56:17 +0200
+
 gmp (2:6.2.1+dfsg-3) unstable; urgency=medium
 
   * [2da3c94] Avoid bit size overflows. CVE-2021-43618. (Closes: #994405)
